@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #c68c53a8;
+    font-family: 'Fasthand', cursive;
+    font-size: 2.2rem;
+}
+
+.main-container{
+    width: 95%;
+    margin: auto;
+}
+
+.main-container .container1 button{
+    font-family: sans-serif;
+}
+
+.container1{
+    margin-left: 5%;
+}
+
+.container2{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+    margin-left: 5%;
+}
+
+.container3{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+textarea{
+    box-shadow: 10px 10px 24px 0px rgba(0 , 0 , 0 , 0.5);
+    outline: none;
+    border: none;
+    width: 275px;
+    height: 275px;
+    padding: 40px 25px 25px 25px;
+}
+
+svg{
+    color: gray;
+}
+
+#check-icon{
+    position: absolute;
+    right: 14%;
+    top: 4%;   
+}
+
+#x-icon{
+    position: absolute;
+    right: 5%;
+    top: 4%;
+}

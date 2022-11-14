@@ -1,0 +1,92 @@
+body{
+    overflow: hidden;
+    height: 100vh;
+    background: conic-gradient(at 125% 50% , #b78cf7 , #ff7c94, #ffcf0d , #ff7c94 , #b78cf7);
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+    padding: 0 25px;
+    font-size: 1rem;
+    font-weight: 100;
+    box-shadow: 0 2px 4px 0 rgba(0 , 0 , 0 , 0.5);
+}
+
+.main input{
+    box-sizing: border-box;
+    width: 80%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.main button{
+    width: 10%;
+    padding:8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-top-right-radius:0;
+    border-bottom-right-radius: 0;
+    background-color: whitesmoke;
+}
+
+.main button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#quality{
+    width: 91%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+#tip-amount{
+    visibility: hidden;
+    min-width: 250px;
+    margin: auto;
+    background-color:limegreen;
+    color: white;
+    bottom: 30px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+}
+
+#tip-amount.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s , fadeout 0.5s 2.5s;
+    animation: fadein 0.5s , fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
+@keyframes fadeout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}

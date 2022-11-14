@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h3 style="text-align: center;">Tip Calculator</h3>
+            <p style="border-bottom: 2px solid rgba(211 , 211 , 211, 0.5);"></p>
+            <br>
+            <label for="amount">Bill Amount</label>
+            <br>
+            <button><i class="fas fa-dollar-sign"></i></button>
+            <input id="amount" type="number">
+            <br><br>
+            <label for="guest">Number of Guests</label>
+            <br>
+            <button><i class="fas fa-male"></i></button>
+            <input id="guests" type="number">
+            <br><br>
+            <label for="quality">Service Quality</label>
+            <br>
+            <select id="quality">
+                <option disabled selected value = "0">Choose...</option>
+                <option value="0.3">30% - Outstanding</option>
+                <option value="0.2">20% - Good</option>
+                <option value="0.15">15% - It was Ok</option>
+                <option value="0.1">10% - Bad</option>
+                <option value="0.05">5% - Terrible</option>
+            </select>
+
+            <div style="text-align: center;" class="">
+                <p style="border-top: 2px solid rgba(211 , 211 , 211 , 0.5);"></p>
+                <button onclick="calculate()" style="border-radius: 5px; width:fit-content;">Calculate</button>
+            </div>  
+        </div>
+        <div id="tip-amount">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

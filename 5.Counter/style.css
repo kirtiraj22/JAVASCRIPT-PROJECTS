@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: yellow;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    border: 4px solid black;
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:white ;
+}
+
+.display h2{
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.display p{
+    font-size: 4rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.btn{
+    margin: auto;
+}
+
+.btn .increase,
+.btn .decrease{
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+
+.btn .increase{
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+    border: 1px solid blue;
+}
+
+.btn .increase:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn .decrease{
+    border: 1px solid black;
+    background: white;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+
+.btn .decrease:hover{
+    background: blue;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    border: none;
+}

@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto:ital,wght@1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(255, 170, 0);
+    overflow: hidden;
+}
+
+.container{
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.groceries{ 
+    width: 600px;
+    min-height: 100vh;
+    margin: auto;
+    background: whitesmoke;
+    box-shadow: 10px 10px 24px 0 rgba(0 , 0 , 0 ,0.5);
+}
+
+.groceries h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 1em;
+}
+
+.groceries i{
+    font-size: 2rem;
+    color: rgb(255, 170, 0);
+}
+
+.groceries input{
+    font-family: 'Fasthand', 'cursive';
+    outline: none;
+    border: 0;
+    border-bottom: 3px solid black;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+#allItems{
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+@media (max-width:480px){
+    .groceries h1{
+        font-size: 2rem;
+    }
+    .groceries i{
+        font-size: 1.5rem;
+    }
+    .groceries input{
+        font-size: 1.5rem;
+    }
+    #allItems{
+        margin-left: 25px;
+        font-size: 1.5rem;
+    }
+}

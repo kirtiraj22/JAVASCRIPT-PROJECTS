@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border: 1px solid white;
+    width: 250px;
+}
+
+h1{
+    color: goldenrod;
+    padding: 1.2rem;
+}
+
+p{
+    padding: 0.7rem;
+}
+
+button{
+    padding: .5rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: goldenrod;
+    border: none;
+    border-radius: 3px;
+    color: #016f32;
+    font-size: medium;
+    font-weight: bold;
+    width: 150px;
+}
+
+#sum-el{
+    padding: auto;
+}
+
+#message-el{
+    color: white;
+}
